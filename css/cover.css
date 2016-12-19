@@ -63,9 +63,8 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
   position: absolute;
-  left: 70%;
+  left: 60%;
   top: 20%;
 }
 
