@@ -1,0 +1,14 @@
+.theprocess{
+  padding-left: 35px;
+  padding-right: 35px;
+}
+body {
+  background: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+p, ol, ul {
+  font-size: 16px;
+  color: black;
+  font-family: 'Georgia', sans-serif;
+}
