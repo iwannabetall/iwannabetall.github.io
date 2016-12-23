@@ -10,14 +10,14 @@ var data =[
     "pic": "bellyshack.jpg",
     "thumbs": "bellyshack.jpg",
     "restaurants": "Belly Shack",
-    "details": "I once spent $27 here by myself for lunchÉeverything here is about $10.",
+    "details": "I once spent $27 here by myself for lunch...everything here is about $10.",
     "Location": "Chicago"
   },
   {
     "pic": "ramenparlour.jpg",
     "thumbs": "ramenparlour.jpg",
     "restaurants": "Ramen Parlour",
-    "details": "Lobster and Pork Broth RamenÉcomes with half a soft shell crab!!",
+    "details": "Lobster and Pork Broth Ramen–comes with half a soft shell crab!!",
     "Location": "San Mateo, CA"
   },
   {
@@ -60,7 +60,7 @@ var data =[
     "thumbs": "neopol.jpg",
     "restaurants": "Neopol",
     "details": "Smoked Salmon BLT",
-    "Location": "Union Market, Washington DC"
+    "Location": "Washington DC"
   },
   {
     "pic": "sfdimsum.jpg",
@@ -81,7 +81,7 @@ var data =[
     "thumbs": "besttacos.jpg",
     "restaurants": "Los Tacos No. 1",
     "details": "Best.  Tacos.  Ever.",
-    "Location": "Chelsea Market"
+    "Location": "New York City"
   },
   {
     "pic": "ramendojo.jpg",
@@ -100,8 +100,8 @@ var data =[
   {
     "pic": "waflesdinges.jpg",
     "thumbs": "waflesdinges.jpg",
-    "restaurants": "Wafles & Dinges",
-    "details": "Wafle with Speculoos Ice Cream!",
+    "restaurants": "Wafels & Dinges",
+    "details": "Wafel with Speculoos Ice Cream!",
     "Location": "New York City"
   },
   {
@@ -115,15 +115,15 @@ var data =[
     "pic": "twolittleredhens.jpg",
     "thumbs": "twolittleredhens.jpg",
     "restaurants": "Two Little Red Hens",
-    "details": "Red Velvet Cake.  I don't even like cake.",
-    "Location": "Upper East Side, NYC"
+    "details": "Red Velvet Cake.  I could have ate this whole thing.  I don't even like cake.",
+    "Location": "New York City"
   },
   {
     "pic": "steakandeggs.jpg",
     "thumbs": "steakandeggs.jpg",
-    "restaurants": "CafŽ Orlin",
+    "restaurants": "Cafe Orlin",
     "details": "Steak and Eggs with Spinach Sauce",
-    "Location": "East Village, NYC"
+    "Location": "New York City"
   },
   {
     "pic": "bellyshack_dessert.jpg",
@@ -144,7 +144,7 @@ var data =[
     "thumbs": "foragerstable.jpg",
     "restaurants": "Forager's Table",
     "details": "Smoked Salmon Tartine.",
-    "Location": "Chelsea, NYC"
+    "Location": "New York City"
   },
   {
     "pic": "bfd.jpg",
@@ -170,9 +170,9 @@ var data =[
   {
     "pic": "mofongo.jpg",
     "thumbs": "mofongo.jpg",
-    "restaurants": "",
+    "restaurants": "Puerto Rico",
     "details": "Mofongo",
-    "Location": "Puerto Rico"
+    "Location": ""
   },
   {
     "pic": "bpatisserie.jpg",
@@ -227,7 +227,7 @@ var data =[
     "pic": "shakeshack.jpg",
     "thumbs": "shakeshack.jpg",
     "restaurants": "Shake Shack",
-    "details": "4th of July SpecialÐBlueberry Pie Concrete!",
+    "details": "4th of July Special–Blueberry Pie Concrete!",
     "Location": "New York City"
   },
   {
