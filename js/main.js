@@ -24,7 +24,7 @@ $(document).ready(function(){
             '<li><a href="lasercutmw.html">Laser Cut</a></li>'+
             '<li><a href="zhajiangmian.html">ZhaJiangMian</a></li>'+
           '</ul></li>'+
-        '<li><a href="#">'+"I'm Hungry.</a></li>"+
+        '<li><a href="hungry.html">'+"I'm Hungry.</a></li>"+
         '<li><a href="#">Photos</a></li>'+
         '<li><a href="stupidq.html">Stupid Question(s)</a></li>'+
         '<li><a href="old.html">'+"I'm a grownup.</a></li></ul></div></div></nav>"
