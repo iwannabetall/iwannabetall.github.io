@@ -10,9 +10,8 @@
     <meta name="geo.country" content="US" />
     <meta name="dc.language" content="en" />
     <meta name="description" content="Who am I" />
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Stuff I Googled and Copy Pasted</title>
+    <title>Things I Googled and Copy Pasted</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,28 +27,23 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+<style type="text/css">
 
+</style>
   <body>
-
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+        <div class="cover-container" >
   
-          <div class="inner cover">
-            <h1 class="cover-heading">Is it a Hat?</h1> <h1>Or a Boa that Swallowed an Elephant?</h1>
-            <br>
+          <div class="inner cover" style='top:10%; left:35%'>
+            <h3 class="cover-heading" style='position: relative; left:95%; font-size:240%;'>Is it a Hat? <br><br> Or a Boa that <br>Ate an Elephant?</h3>
+            <br>  
             <p class="lead">
-              <a href="profesh.html" class="btn btn-lg btn-default" >Hat</a>
-              <a href="boa.html" class="btn btn-lg btn-default" style='position: relative; left:5%;' >Boa</a>
+              <a href="profesh.html" class="btn btn-lg btn-default" id='hat' style='position: relative; left:95%;'>Hat</a>
+              <a href="boa.html" class="btn btn-lg btn-default" id='boa' style='position: relative; left:100%;' >Boa</a>
             </p>                  
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p></p>
-            </div>
           </div>
 
         </div>
@@ -63,8 +57,41 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+
+$(document).ready(function(){
+  //determining window height and width
+  var screen_height = $(window).height();
+  var screen_width = $(window).width();
+  
+//width and height of poster, with browser view
+  if (screen_width<=420) {
+    console.log(screen_width);
+    $('body').css('background-image', 'url(' + "images/thumbs/tinyboa.png" + ')');
+
+    //remove all style 
+    $('.inner-cover').removeAttr('style');
+    $('.cover-heading').removeAttr('style');
+    $('.btn').removeAttr('style');
+
+    //set the width and height of the poster image
+    $(".inner-cover").css({position:'absolute'});    
+    $(".cover-heading").css({position:'relative', right: '', left:""});
+    $(".cover-heading").css("text-align", "center");
+    $(".cover-heading").css("fontSize", '30%;');
+
+    //fix button
+    $("#hat").css({position:'relative', right: '', left:""});
+    $(".lead").css("text-align", "center");
+    $("#boa").css({position:'relative', right: '', left:""});
+    $(".btn").css("font-size", '30%;');
+
+  }
+});
+
+    </script>
   </body>
 </html>
