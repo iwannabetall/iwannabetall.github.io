@@ -123,7 +123,7 @@ iframe{
       <div class="col-md-4">
         
         <h1>BYOB</h1>
-        <a href = "#myModal" data-toggle="modal"><img src="images/byob.png" ></a>
+        <a href = "#" id="byobvid"><img src="images/byob.png" onclick=popvid()></a>
         <p>Years ago, as part of <a href="https://sustain.princeton.edu/greenleaders/student-environmental-communication-network-secn">Princeton's SECN</a> summer program,<a href="http://mimionuoha.com"> Mimi Onuoha</a> and I made this 10 minute documentary about plastic bags in two weeks. <br>Bring Your Own Bag, please!</p>
 
             <!-- Modal HTML -->
@@ -158,7 +158,22 @@ function openD3(){
   window.open("http://zhaoanna.me/ElectionExpenses/", "_blank")
 }
 
+function popvid(){
+  var screen_width = $(window).width();
+    
+    if (screen_width>=560) {
+      var ele = document.getElementById("byobvid")
+      ele.setAttribute("data-toggle", "modal")
+      console.log(location.href)
+      
+    }
+}
+
 $(document).ready(function(){
+  var screen_height = $(window).height();
+  var screen_width = $(window).width();
+  
+    console.log(screen_width)
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
     var url = $("#byob").attr('src');
@@ -174,6 +189,7 @@ $(document).ready(function(){
     $("#myModal").on('show.bs.modal', function(){
         $("#byob").attr('src', url);       
     });
+  
 });
 </script>
 	</body>
