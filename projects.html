@@ -68,8 +68,8 @@ iframe{
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-  		<a window.location.hostname="/ElectionExpenses/" target="_blank">
-			<img src="images/fulls/campaignspending.png">
+  		<a href="#" target="_blank">
+			<img src="images/fulls/campaignspending.png" onclick="openD3()">
       	</a>          
         <div class="carousel-caption">
           <h3>Campaign Expenditures</h3>
@@ -112,7 +112,7 @@ iframe{
     <div class="row">
       <div class="col-md-4" >
         <h1>Campaign Expenditures</h1>
-        <a window.location.hostname="/ElectionExpenses/" target="_blank"><img src="images/thumbs/campaignspending.png" ></a>      
+        <a href="#" target="_blank"><img src="images/thumbs/campaignspending.png" onclick="openD3()"></a>      
         <p>Group project using D3 to visualize campaign spending in the 2016 election cycle. </p>
       </div>
       <div class="col-md-4">
@@ -154,6 +154,10 @@ iframe{
 
 </script>
 <script type="text/javascript">
+function openD3(){
+  window.open("http://zhaoanna.me/ElectionExpenses/", "_blank")
+}
+
 $(document).ready(function(){
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
