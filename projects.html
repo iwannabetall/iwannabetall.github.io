@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="hello.css" rel="stylesheet">
+	    <link href="css/lightbox.css" rel="stylesheet">
+
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		</script>
+
+	</head>
+<style type="text/css">
+body {
+  background: white;
+  color: black;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+p, ol, ul, h2, h3{
+  color: black;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+h1{
+	color: black;
+	font-size: 160%;
+	font-weight:900;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+img{
+	height:50%;
+	margin:auto;
+}
+iframe{
+	margin: auto;
+}
+.bs-example{
+	margin: 20px;
+}
+.modal-content iframe{
+    margin: 0 auto;
+    display: block;
+}
+</style>
+	<body>
+   <div id="navigation-container"> </div>
+<h1>Selected Projects</h1>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+  		<a href="http:zhaoanna.me/ElectionExpenses/" target="_blank">
+			<img src="images/fulls/campaignspending.png">
+      	</a>          
+        <div class="carousel-caption">
+          <h3>Campaign Expenditures</h3>
+        </div>
+      </div>
+
+      <div class="item">
+      	<a href="http://imhungry.neocities.org/" target="_blank">
+			<img src="images/fulls/nyc.png">
+      	</a>        
+        <div class="carousel-caption">
+          <h3>Food Map</h3>          
+        </div>
+      </div>
+    
+      <div class="item">
+  		<a href="#myModal" data-toggle="modal">
+			<img src="images/fulls/byob.png" style ="padding-top:88px; padding-bottom:88px;">
+      	</a>   
+        <div class="carousel-caption">
+          <h3>Bring Your Own Bag</h3>
+        </div>
+      </div> 
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<br>
+  <section class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" >
+        <h1>Campaign Expenditures</h1>
+        <a href="http:zhaoanna.me/ElectionExpenses/" target="_blank"><img src="images/thumbs/campaignspending.png" ></a>        
+        <p>Group project using D3 to visualize campaign spending in the 2016 election cycle. </p>
+      </div>
+      <div class="col-md-4">
+        <h1>Food Mapping</h1>
+        <a href="http://imhungry.neocities.org/" target="_blank"><img src="images/thumbs/nyc.png" ></a>        
+        <p>Used the Google Maps API and Javascript to make a data viz mapping the locations of places I had eaten at. Yes, I'm a bit of a food snob.</p>
+      </div>
+      <div class="col-md-4">
+        
+        <h1>BYOB</h1>
+        <a href = "#myModal" data-toggle="modal"><img src="images/byob.png" ></a>
+        <p>Years ago, as part of <a href="https://sustain.princeton.edu/greenleaders/student-environmental-communication-network-secn">Princeton's SECN</a> summer program,<a href="http://mimionuoha.com"> Mimi Onuoha</a> and I made this 10 minute documentary about plastic bags in two weeks. <br>Bring Your Own Bag, please!</p>
+
+            <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe id="byob" width="560" height="315" src="https://www.youtube.com/embed/7V4LHC1yMpk?autoplay=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+  <h1>Other <a href="diy.html">DIY</a></h1> 
+</section>
+
+</div>
+	<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	    <script src="js_pro/main.js"></script>		    
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#byob").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#byob").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModal").on('show.bs.modal', function(){
+        $("#byob").attr('src', url);       
+    });
+});
+</script>
+	</body>
+</html>

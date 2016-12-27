@@ -8,8 +8,9 @@
     <title>Topographical Map</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="hello.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/lightbox.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -17,20 +18,6 @@
     <![endif]-->
   </head>
 <style type="text/css">
-.theprocess{
-  padding-left: 35px;
-  padding-right: 35px;
-}
-body {
-  background: white;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-}
-p, ol, ul {
-  font-size: 16px;
-  color: black;
-  font-family: 'Georgia', sans-serif;
-}
 
 .blogphoto{
   margin: 20px;
@@ -48,11 +35,11 @@ p, ol, ul {
 <div class="theprocess">
    <h1>Laser Cutting a Topographical Map</h1>
 
-    <p>So I stumbled upon this guy's laser cut <a href="http://theshamblog.com/making-a-laser-cut-topo-map-the-design-phase/">topographical map </a>of Portland, Maine, really wanted one of SF and googled how much these things cost to own...and decided nope. I wanted to make one of SF to see how steep the hills that I "biked" this summer were...except the end product just made me terrified of the parts of SF that were taller than the little nubbins that I half-biked/half-pushed my bike up.</p>
+    <p>So I stumbled upon this guy's laser cut <a href="http://theshamblog.com/making-a-laser-cut-topo-map-the-design-phase/" target="_blank">topographical map </a>of Portland, Maine, really wanted one of SF and googled how much these things cost to own...and decided nope. I wanted to make one of SF to see how steep the hills that I "biked" this summer were...except the end product just made me terrified of the parts of SF that were taller than the little nubbins that I half-biked/half-pushed my bike up.</p>
     
-    <p>Portland guy does a good job detailing his steps, so I Melania'd a lot of his first 3 steps to minimize going back and forth.  I diverged from his process significantly after #3/4, but rec you read his method too.  (I use more QGIS at the beginning and less Illustrator, whereas he's the opposite.  I've got a little previous GIS experience, had never used it before this.)  Even though only like 3 people are going to read this in full, I've convinced myself that I'm doing this case I want to make another one in the future and I don't want to spend hours figuring out how to do this again/this is for everybody at UNC BeAM that helped me.</p>
+    <p>Portland guy does a good job detailing his steps, so I Melania'd a lot of his first 3 steps to minimize going back and forth.  I diverged from his process significantly after #3/4, but rec you read his method too.  (I use more QGIS at the beginning and less Illustrator, whereas he's the opposite.  I've got a little previous GIS experience, had never used it before this.) </p>
 
-    <h3>Summary of the Process #TrustTheProcess</h3>
+    <h3>Overview of the Process #TrustTheProcess</h3>
     <p style="font-size: 10px;">You already win at life if you got that hashtag.</p>
     
     <ol type="1">
@@ -72,14 +59,14 @@ p, ol, ul {
       <li>Plywood, Wood Glue</li>
       <li>Elevation Data</li>
     </ul>
-
+<h3>Let's get crackin'</h3>
     <ol type="1">
-      <strong><li>Get data (as with all data, not necessarily the easiest)</li></strong><br>
+      <strong><li>Get data (as with all data, not necessarily the easiest)</li></strong>
       <p>Needs to be a .dem file, which has an .asc extension.  We're looking for a digital elevation model (DEM), and a shapefile (.shp) of bike lanes.  *FYI Shapefiles are weird and must have a .dbg and .shx file in addition to the .shp file or it won't work.  Basically, just download/copy the entire thing of files associated with the shp file, ie .prj, .qpj.  Don't ask me why lol.
       <br>
       Remember that the elevation data is a raster data type and the contour layers/bike lanes are vector data. </p>
       
-      <strong><li>Open the Data in QGIS</li></strong><br>
+      <strong><li>Open the Data in QGIS</li></strong>
       <p>For screenshots on how to do this, go to Portland dude's page, or hover over the buttons on the far left and click the ‘Add Raster Layer’ button to add the dem file data (it's the checkerboard one).  I just used the default coordinate reference system that popped up.  It'll probly be slow to zoom/pan.  </p>
 
       <p>2a. Get contour lines.  From the top menu bar: Raster -> Extraction -> Contour. In the window that pops up, select a path for your output file and give it a name. This will create a folder with that name and put your output contour files into it.  You need to click select and type the file name in the window s.t. a path like this "Laser Cutting/SF Topo Map/Newfilename" to the file shows up.  </p>
@@ -88,32 +75,32 @@ p, ol, ul {
       
       <p>**In the Contour box, make sure to: check “Attribute Name” and name the variable or you won't get any data in the file.  Click ok.  This step takes QGIS a little time, longer the larger your dataset is–I bet there's a way to do this on a portion of the map too. </p>
 
-      <strong><li>Crop the raster (and contours) </li></strong> <br>
+      <strong><li>Crop the raster (and contours) </li></strong> 
         <p>This will also cut down on data size/speed up QGIS. </p>
 
         <p> 3a. With the original elevation data still open, create the shape (Idk what the proper term here is) we're clipping with.  Select the Clipper tool from the top menu bar: Raster ‣ Extraction ‣ Clipper.  Select extent, click the pen tool (circled) and draw a rectangle on the map of the area you want.  </p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/3a.png" data-lightbox="3a"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3a.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/3a.png" data-lightbox="3a"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3a.png" alt="image-1" style="position:relative; left:50%; margin-left:-102.5px;" /></a>
 
         <br><p>Step 3a will create a tif file that looks something like this: </p>
-       <a class="example-image-link" href="Topo_Map_Guide/3a2.png" data-lightbox="3a2"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3a2.png" alt="image-1"/></a>
+       <a class="example-image-link" href="Topo_Map_Guide/3a2.png" data-lightbox="3a2"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3a2.png" alt="image-1" style="position:relative; left:50%; margin-left:-131px;"/></a>
 
       <p>3bi. We're going to next make this into a polygon that we can clip with.  I believe the googling phrase is “clip polygon by raster".  Create the polygon (outputs a .shp file) covering your raster extent.  From the top menu bar: Vector -> Research Tools -> Polygon from layer extent.  For the input layer: whatever you called the tif file above.  Make an output file, same as we've been doing.  </p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/3bi.png" data-lightbox="3bi"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3bi.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/3bi.png" data-lightbox="3bi"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3bi.png" alt="image-1" style="position:relative; left:50%; margin-left:-158px;"/></a>
 
         <br><p> 3bii. Obtain the clip between your vector layer and the extent polygon.  From the top menu bar: Vector -> Geoprocessing tools -> Clip<br>For "input vector layer", select the contour lines shapefile.  For clip layer, select the polygon shpfile that we just created in 3b. 
         <br>*If you aren't able to get rid of the random rect we have from clipping, I couldn't figure out how to do it other than restarting QGIS. I didn't know what to google, so if you know how to do it, let me know.
      </p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/3bii.png" data-lightbox="3bii"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3bii.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/3bii.png" data-lightbox="3bii"><img class="blogphoto" src="Topo_Map_Guide/thumbs/3bii.png" alt="image-1" style="position:relative; left:50%; margin-left:-130.5px;"/></a>
 
-        <strong><li>Separate the contour layer into individual layers</li></strong><br>
+        <strong><li>Separate the contour layer into individual layers</li></strong>
         <p>There's a tool in the Vector menu that can split a dataset based on an attribute.  On the top of the menu bar: Vector -> Data Management Tools -> Split Vector Layer.
          <br> For "input vector layer", select the contour layer.  <br>
         For "unique ID field", select "ELEV" or whatever you named the elevation field.  Browse a folder to put them in–I rec a separate folder.</p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/4.png" data-lightbox="4"><img class="blogphoto" src="Topo_Map_Guide/thumbs/4.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/4.png" data-lightbox="4"><img class="blogphoto" src="Topo_Map_Guide/thumbs/4.png" alt="image-1" style="position:relative; left:50%; margin-left:-151.5px;"/></a>
 
         <p>At this point, you should remove unnecessary data (mostly the original dem file and unclipped contours)–right click on the layer --> remove. You should be left with only lines inside the polygon we just clipped. You can always reload it if needed.</p>
 
@@ -127,14 +114,14 @@ p, ol, ul {
         <p>6a. In the layer panel on the left side, right click on a contour layer --> properties.  </p>
         <p>6b. In the properties panel, click the down arrow by color (green circle) --> "choose color". </p>
         <p>6c. In the select color panel, put in 255 for R and G and 0 for B (red circle) --> OK <br> Unforch, I didn't figure out a way to do this for all layers at once. It's tedious. Stream some netflix. </p>
-       <a class="example-image-link" href="Topo_Map_Guide/6b.png" data-lightbox="6b"><img class="blogphoto" src="Topo_Map_Guide/thumbs/6b.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/6b.png" data-lightbox="6b"><img class="blogphoto" src="Topo_Map_Guide/thumbs/6b.png" alt="image-1" style="position:relative; left:50%; margin-left:-171px;"/></a>
 
         <strong><li>Repeat for Bike</li></strong>
 
         <p> Repeat 6 for the bike lanes layer, but make it RGB 0R, 0 G, 255 Blue (blue = etch).  *You'll have to do this for every cropped bike lane, ie repeat after step 8.  More netflix to numb away the pain. <br>
           Random QGIS tip: to hide/view all layers, click the eye on the top ("manage layer visibility")</p>
 
-        <strong> <li>Clip Bike Lanes</li></strong><br>
+        <strong> <li>Clip Bike Lanes</li></strong>
         <p>This step is a little hard to explain. Goal is to clip all bike lanes out of each layer where it will be covered by another layer on top of it. (reduces time needed for laser cutting).  If you're not going to put roads/bike lanes on, you can jump ahead, but having roads/lanes will make it easier to make sure you've lined up your parts correctly.</p>
 
         <p> We're going to do this by creating polygons out of each layer except the bottom one and then use the polygon for the layer that would sit on top of it to clip it and remove all the bike lanes that are in the layer above.  </p>
@@ -145,30 +132,30 @@ p, ol, ul {
           8b0. Adding this at the end of step 8 because we skip this step for the first layer. <br>
           8b. Remove the Lines you don’t need: Vector -> Geoprocessing tools -> Difference</p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/8a.png" data-lightbox="8a"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8a.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/8a.png" data-lightbox="8a"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8a.png" alt="image-1" style="position:relative; left:50%; margin-left:-159.5px;"/></a>
           <p>This is for a different layer, but you should get something that looks like this.  Make sure to change the bike lanes to blue. </p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/8b.png" data-lightbox="8b"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8b.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/8b.png" data-lightbox="8b"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8b.png" alt="image-1" style="position:relative; left:50%; margin-left:-186px;"/></a>
 
           <p><u>*Step 8b0.</u> For all future layers/higher elevations, we'll need to clip the bike lanes with the contour layer's corresponding polygon to fit within each contour layer.  You must clip with the polygon or you'll get whatever bike lane pieces that cross over the contour line (ie a couple dots at best).</p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/8c.png" data-lightbox="8c"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8c.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/8c.png" data-lightbox="8c"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8c.png" alt="image-1" style="position:relative; left:50%; margin-left:-173px;"/></a>
           <p>You should get something that looks like this.  Repeat step 8b. Repeat for all layers as necessary.</p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/8d.png" data-lightbox="8d"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8d.png" alt="image-1" /></a>
+       <a class="example-image-link" href="Topo_Map_Guide/8d.png" data-lightbox="8d"><img class="blogphoto" src="Topo_Map_Guide/thumbs/8d.png" alt="image-1" style="position:relative; left:50%; margin-left:-172.5px;" /></a>
 
           <p>Need to remove extra bike lanes (difference with polygon of higher elevation)</p>
           <p>To minimize chances for error, I recommend that you fit (clip) all bike lanes within their respective contours first, then remove all lines (difference) all lines that would get covered by the stacked layer.  </p>
 
           <p>In general, clip with polygons when you want the vector in shape of the polygon.  Difference with polygons when you want the vectors of only what you can see once you layer polygon on top. </p>  
 
-          <strong> <li>Export as SVG from QGIS </li> </strong> <br>
+          <strong> <li>Export as SVG from QGIS </li> </strong> 
           <p>We're going to be saving each contour-bike layer as its own SVG file.  <br>
           9a. Pan and zoom such that the area fills your screen and jot down the scale (green) for the future case you need to go back and remake a layer.  Click new print composer.   It'll open a new window.  </p>
-       <a class="example-image-link" href="Topo_Map_Guide/9a.png" data-lightbox="9a"><img class="blogphoto" src="Topo_Map_Guide/thumbs/9a.png" alt="image-1" /></a><br>
+       <a class="example-image-link" href="Topo_Map_Guide/9a.png" data-lightbox="9a"><img class="blogphoto" src="Topo_Map_Guide/thumbs/9a.png" alt="image-1" style="position:relative; left:50%; margin-left:-142.5px;"/></a><br>
           <p>9b. In the composition (red box), change the preset to custom.  Change to inches.  Pick a size for your map–I did 32 x 18 inches.  9c. Click new map (blue circle).  Draw a rectangle the size of the canvass.  Go back to the red square and select the item properties tab (next to the composition tab).  Scroll to "Position and Size" and set the X and Y to be 0 mm, and the width and height to be whatever you set your canvas size to, but in mm (ah if only we did the metric system).  For me, I had 812.8 mm x 457.2 mm.  Jot down the scale under the top panel, "Main Properties".  I used 19942.</p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/9c.png" data-lightbox="9c"><img class="blogphoto" src="Topo_Map_Guide/thumbs/9c.png" alt="image-1" /></a><br>
+       <a class="example-image-link" href="Topo_Map_Guide/9c.png" data-lightbox="9c"><img class="blogphoto" src="Topo_Map_Guide/thumbs/9c.png" alt="image-1" style="position:relative; left:50%; margin-left:-211px;"/></a><br>
           <p>Click the "export as SVG" button (green circle) and ignore the warnings haha.  </p>     
 
           <p>9d. Next layer: Switch back to the QGIS (command + ~ on a mac).  Uncheck the layer you just saved as an SVG, and select the elevation and bike lanes.  Be careful to not scroll or you'll have to reset your scale.  Cmd-tilda back to the same print composer canvas, click new map (blue circle) and repeat 9c.  If the scale on the 2nd layer doesn't match the first layer, paste in the scale (19942 here), and click update preview.  Export as SVG.</p>
@@ -177,7 +164,7 @@ p, ol, ul {
           <u>For the layers with no bike lanes:</u><br>
           <p>To make sure that I knew which piece to stack the next random piece on and where within the layer, I exported the contour layer for the elevation below the layer of interest as well (you might need to delete some random scraps). This will give you an extra thin trace around your layer to add that can function as a stencil.  Probly better ways out there, but this is the best I could think of.   </p>
 
-       <a class="example-image-link" href="Topo_Map_Guide/9stencil.jpg" data-lightbox="stencil"><img class="blogphoto" src="Topo_Map_Guide/thumbs/9stencil.jpg" alt="image-1" /></a><br>
+       <a class="example-image-link" href="Topo_Map_Guide/9stencil.jpg" data-lightbox="stencil"><img class="blogphoto" src="Topo_Map_Guide/thumbs/9stencil.jpg" alt="image-1" style="position:relative; left:50%; margin-left:-122.5px;" /></a><br>
 
           <strong> <li> Illustrator</li></strong>
 
@@ -199,17 +186,20 @@ p, ol, ul {
         <p>Wood glue changes colors after it dries and will squirt out so be careful when you try and get the weird edges.  Make sure to clamp/apply pressure evenly to minimize the gaps between the wood.  I regret not doing a better job gluing.  </p>
 
         <strong> <li> Cover</li></strong>
-        <p>This part is tricky.  Measure the dimensions and laser cut the appropriate sizes in acrylic. You should laser cut it because you need the sides to be smooth.  I didn't do the actual gluing (technically closer to solvent welding) part and I don't understand how this works...it's magical and you need a fume hood in ideal scenario because this stuff reeks and is some sort of weird acid (potentially hazardous? no idea).  Check out the magic <a href="https://youtu.be/hT6Ow_cBTps?t=3m30s">here</a>.</p>
+        <p>This part is tricky.  Measure the dimensions and laser cut the appropriate sizes in acrylic. You should laser cut it because you need the sides to be smooth.  I didn't do the actual gluing (technically closer to solvent welding) part and I don't understand how this works...it's magical and you need a fume hood in ideal scenario because this stuff reeks and is some sort of weird acid (potentially hazardous? no idea).  Check out the black magic <a href="https://youtu.be/hT6Ow_cBTps?t=3m30s" target="_blank">here</a>.</p>
 
         <strong> <li> Golden Gate Bridge!</li></strong>
         <p>DNE yet.  Found a stl file for it on Thingiverse and somebody will be attempting to use some high tech 3d resin printer to make one for me.  Keeping my fingers crossed here that it works. 
 </p>
-      <a class="example-image-link" href="Topo_Map_Guide/finalprod.jpg" data-lightbox="finalprod"><img class="blogphoto" src="Topo_Map_Guide/thumbs/finalprod.jpg" alt="image-1" /></a><br>
+
+</ol>
+<p>Still a work in progress, but the current state: </p>
+      <a class="example-image-link" href="Topo_Map_Guide/finalprod.jpg" data-lightbox="finalprod"><img class="blogphoto" src="Topo_Map_Guide/thumbs/finalprod.jpg" alt="image-1" style="position:relative; left:50%; margin-left:-408px;"/></a><br>
 
 <br>
-<p>HUGE thanks to everybody, particularly, Drew, Charlie, DJ, Glenn, and David at the <a href="http://beam.unc.edu/">UNC Makerspace </a> for all their help!</p>
+<p>HUGE thanks to everybody, particularly, Drew, Charlie, DJ, Glenn, and David at the <a href="http://beam.unc.edu/" target="_blank">UNC Makerspace </a> for all their help!</p>
 
-    </ol>
+    
 </div>
     
 

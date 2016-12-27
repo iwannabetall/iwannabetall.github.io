@@ -13,39 +13,15 @@ $(document).ready(function(){
         '<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>'+
         '<span class="icon-bar"></span>'+
       '</button>'+
-      '<a class="navbar-brand" href="https://iwannabetall.github.io" style="color: white;"' + 
-      'font-family: Source Sans Pro, Helvetica, sans-serif;'+ '>Anna Zhao</a></div>'+
+      '<a class="navbar-brand" href="https://iwannabetall.github.io" style="color: white;">ANNA ZHAO</a></div>'+
       '<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">'+
-      '<ul class="nav navbar-nav navbar-right" ' + 'style=' + '"'+ 'font-family: Source Sans Pro, Helvetica, sans-serif;'+'"' + '>'+
-        '<li><a href="raisedbyasians.html">Save Money.</a></li>'+
+      '<ul class="nav navbar-nav navbar-right">'+
+        '<li><a href="hat.html">ME</a></li>'+
         '<li>'+
-          '<a href="diy.html">DIY</a>'+
-        '<li><a href="hungry.html">'+"I'm Hungry.</a></li>"+
-        '<li><a href="photos.html">Photos</a></li>'+
-        '<li><a href="stupidq.html">Stupid Question(s)</a></li>'+
-        '<li><a href="hat.html">'+"I'm a grown-up.</a></li></ul></div></div></nav>"
+          '<a href="projects.html">PROJECTS</a>'+
+        '<li><a href="thoughts.html">THOUGHTS</a></li>' + 
+		'<li><a href="photos.html">PHOTOS</a></li>'
 	);
-
-
-	//width and height of poster, with mobile view
-	if (screen_width>600) {
-		//set the width and height of the poster image
-		$("#poster").css("width", screen_width);
-		$("#poster").css("height", screen_height);
-		
-		//set the position of the opening text
-		$("#opening_text").css("margin-top", screen_height/8);
-	} else {
-		//set the width and height of the poster image
-		$("#poster").css("display", "none");
-		// $("#poster").css("position", "relative");
-		// $("#poster").css("width", "100%");
-
-		//set the position of the opening text
-		$("#opening_text").css("margin-top", 50);
-		$("#opening_text").css("padding", 5);
-
-	}
 
 	//mobile menu
 

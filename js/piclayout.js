@@ -7,13 +7,14 @@ $(document).ready(function(){
 
 	//generate pictures 
 	for(i=0; i<data.length; i++){
-	var pic = $('#main').append(
+			console.log("not onne")
+		var pic = $('#main').append(
 		'<article class="thumb">'+
 		'<a href="hungry/images/'+ data[i].pic + '"' +
 		' class="image"><img src="hungry/thumbs/'+ data[i].thumbs +
 		'"' + ' alt="" /></a>'+
   		'<h2>' + data[i].restaurants + '</h2>'+
-  		'<p>'+ data[i].details + '</p><p>'+ data[i].Location + '</p></article>'
+  		'<p>'+ data[i].details + '<span style=' + '"'+'float:right'+'">'+data[i].city + "</span>"+'</p>'+'</article>'
   		);
 	}
 });

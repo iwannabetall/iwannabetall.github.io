@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thoughts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="hello.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/piclayout.css" />
+	    <link href="css/lightbox.css" rel="stylesheet">
+
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		</script>
+
+	</head>
+<style type="text/css">
+body {
+  background: white;
+  color: black;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+p, ol, ul, h2, h3{
+  font-size: 125%;
+font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+h1{
+	color: black;
+}
+</style>
+
+	<body>
+   <div id="navigation-container"> </div>
+
+	<div class="theprocess"> 
+	<h1>Fixing the NBA Draft Lottery</h1> 	
+
+	August 19, 2016 <br>
+			
+	<p>NBA Fanatic friends, click <a href="#soln">here</a> to jump down. For most of my friends who don't follow the NBA or are not familiar with the current process to determine the NBA Draft order, a brief summary: the league lotteries off the best picks with the worst teams getting the highest chance of getting the best picks.  Only the non-playoff teams have a chance at winning the lottery. 
+	</p>	
+	<p><strong>Why the Draft order matters</strong><br> 
+	The expected payoff of draft picks drops off exponentially. You're basically not going to get an NBA All-Star (Kevin Love level) after pick 15, and even after 10 your chances are low.  You chances of an NBA super star (like Steph Curry, Karl-Anthony Towns) drop off even more after I would say 3, but there's still a decent chance at picks 5 to 7.  You might point to Kobe who was drafted 13th, but that was back in the day when high schoolers could be drafted, which meant they were more unknown...in nerd language: greater variation/greater risk/reward because you have less data.  Kawhi Leonard is an exception, but the Spurs have always been an exception.)  
+	</p>
+
+	<p>One major problem with the current system is that it creates the treadmill of mediocrity, ie never being good enough to be a title contender, never bad enough for a high draft pick, always stuck in the middle. If you make the playoffs but are not an actual title contender, you're going to end up with a mediocre draft pick who won't make an immediate impact, if he even makes an impact.  Once a team has been eliminated from playoff contention or if it knows long in advance that it has no chance of making the playoffs, to get the best pick it can, the team is incentivized to lose. Even if you smooth out the probabilities, unless you make it uniform, you still have inverted incentives, and it will probably never be uniform because the League wants to increase parity.  I want to point out that basically everybody in the NBA is extremely talented and wants to win, but that doesn't mean that in the long run that team management can play players who cannot play their best consistently or whose best is just not good enough.
+	</p>
+
+	<p> <strong>Alternatives to the Draft Lottery</strong> <br>
+		I've read a lot of proposed changes to the NBA Draft and most of them involve a change to the salary cap (too convoluted) or pure luck (doesn't help bad teams enough). So how does one fix the inverted incentives and help the bad teams? 
+	</p>
+
+	<p id="soln"><u>The solution:</u> At the end of the regular season, use a random sample of the season to determine who the "worst" teams are and then give the best pick available to the team within the "worst teams" group that had the best record for the season.  <br>
+		
+	<p>It's not as complicated as it might sound. UNC deals with attempting to grade homework for large classes short on graders in the same manner...you randomly pick problems in an assignment to grade, but don't tell the students which ones are being graded. </p>
+
+	<p>More details to actually implement: you need to bucket the "worst" teams. I'd recommend by 5 because it's a nice and even split among 30 teams, and at pick 5, there's a solid chance for a super star.  Once you sort out the bottom 5, get the best team from the next 5 worst teams for the 2nd tier of picks 6-10.  Repeat until pick 30.  There are 82 games in a season and if you randomly select half the season's games, the team's record with 41 games is a fairly accurate reflection of the final overall season.
+	</p>
+
+	<p>So for example, the five worst teams in the 2015-16 season were the Nets, Sixers, Suns, Lakers, and Timberwolves.  If we randomly sampled half the season, the five teams in the first group of "worst teams" could be something different, but not by much.  For example, a likely combo for the first group of "worst teams" could be the Sixers, Lakers, Nets, Bucks, and Pelicans.  If this were the case, the Bucks would get the first pick because they finished the season with the highest winning percentage of this group.  The second pick would go to the Pelicans because they had the highest, etc.
+	</p>
+
+	<p>If you believed that teams picked and chose which games to try hard in (they don't really), randomization removes the ability to do so.  Combined with using the best record overall, teams don't know which games to lose, and team management needs to attempt to win to get the first pick.  A team that lost every game would receive the 5th pick at best/worst–high enough to get a franchise player, but low enough to make a difference. Additionally, bad teams that "tried" are rewarded.
+	</p>
+		
+</p>		
+   </div>
+
+
+	<!-- Scripts -->
+   			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="js/jquery.poptrox.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		    <script src="js_pro/main.js"></script>
+
+</script>
+	</body>
+</html>

@@ -168,7 +168,7 @@
 
 	body, input, select, textarea {
 		color: #a0a0a1;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Oxygen', Garamond, sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -188,7 +188,6 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #34a58e;
 		text-decoration: none;
 	}
@@ -199,8 +198,8 @@
 		}
 
 	strong, b {
-		color: #ffffff;
-		font-weight: 300;
+		color: black;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -208,7 +207,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.7em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -216,7 +215,7 @@
 		font-weight: 300;
 		letter-spacing: 0.1em;
 		line-height: 1.5;
-		margin: 0 0 1em 0;
+		margin: 0 0 0.5em 0;
 		text-transform: uppercase;
 	}
 

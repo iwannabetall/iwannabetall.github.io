@@ -1,254 +1,254 @@
-var data =[
+var data = [
   {
     "pic": "cemita.jpg",
     "thumbs": "cemita.jpg",
     "restaurants": "Taqueria Coatzingo",
     "details": "Chorizo and Egg Cemita.  Take E/7 to Jackson Heights and get it while you wait to transfer to the bus to LGA.",
-    "Location": "Queens, NYC"
+    "city": "Queens, NYC"
   },
   {
     "pic": "bellyshack.jpg",
     "thumbs": "bellyshack.jpg",
     "restaurants": "Belly Shack",
     "details": "I once spent $27 here by myself for lunch...everything here is about $10.",
-    "Location": "Chicago"
+    "city": "Chicago"
   },
   {
     "pic": "ramenparlour.jpg",
     "thumbs": "ramenparlour.jpg",
     "restaurants": "Ramen Parlour",
-    "details": "Lobster and Pork Broth Ramen–comes with half a soft shell crab!!",
-    "Location": "San Mateo, CA"
+    "details": "Lobster and Pork Broth Ramen with soft shell crab!!",
+    "city": "San Mateo, CA"
   },
   {
     "pic": "banhmi.jpg",
     "thumbs": "banhmi.jpg",
     "restaurants": "Banh Mi Saigon",
     "details": "Used to be only $5!  Now $5.50 T_T.",
-    "Location": "Chinatown, NYC"
+    "city": "Chinatown, NYC"
   },
   {
     "pic": "shroomtown.jpg",
     "thumbs": "shroomtown11.jpg",
     "restaurants": "Shroomtown",
     "details": "Found at Vezzo/Tappo/Pizza Gruppo",
-    "Location": "New York City"
+    "city": "New York City"
   },
   {
     "pic": "tealeafsalad.jpg",
     "thumbs": "tealeafsalad.jpg",
     "restaurants": "Mandalay",
     "details": "Tea Leaf Salad",
-    "Location": "San Francisco"
+    "city": "San Francisco"
   },
   {
     "pic": "hotmess.jpg",
     "thumbs": "hotmess.jpg",
     "restaurants": "Pecan Lodge",
     "details": "The Hot Mess",
-    "Location": "Dallas"
+    "city": "Dallas"
   },
   {
     "pic": "malaxiangguo.jpg",
     "thumbs": "malaxiangguo.jpg",
     "restaurants": "YiMaYiLa",
     "details": "",
-    "Location": "Beijing, China"
+    "city": "Beijing, China"
   },
   {
     "pic": "neopol.jpg",
     "thumbs": "neopol.jpg",
     "restaurants": "Neopol",
     "details": "Smoked Salmon BLT",
-    "Location": "Washington DC"
+    "city": "Washington DC"
   },
   {
     "pic": "sfdimsum.jpg",
     "thumbs": "sfdimsum.jpg",
     "restaurants": "Good Mong Kok Bakery",
     "details": "",
-    "Location": "San Francisco"
+    "city": "San Francisco"
   },
   {
     "pic": "shavedice2.jpg",
     "thumbs": "shavedice2.jpg",
     "restaurants": "Sul & Beans",
     "details": "",
-    "Location": "Los Angeles"
+    "city": "Los Angeles"
   },
   {
     "pic": "besttacos.jpg",
     "thumbs": "besttacos.jpg",
     "restaurants": "Los Tacos No. 1",
     "details": "Best.  Tacos.  Ever.",
-    "Location": "New York City"
+    "city": "New York City"
   },
   {
     "pic": "ramendojo.jpg",
     "thumbs": "ramendojo.jpg",
     "restaurants": "Ramen Dojo",
     "details": "",
-    "Location": "San Mateo, CA"
+    "city": "San Mateo, CA"
   },
   {
     "pic": "frontera_dessert.jpg",
     "thumbs": "frontera_dessert.jpg",
     "restaurants": "Frontera Grill",
     "details": "",
-    "Location": "Chicago"
+    "city": "Chicago"
   },
   {
     "pic": "waflesdinges.jpg",
     "thumbs": "waflesdinges.jpg",
     "restaurants": "Wafels & Dinges",
     "details": "Wafel with Speculoos Ice Cream!",
-    "Location": "New York City"
+    "city": "New York City"
   },
   {
     "pic": "lerrosthai.jpg",
     "thumbs": "lerrosthai.jpg",
     "restaurants": "Ler Ros Thai",
     "details": "Pad See Ew",
-    "Location": "San Francisco"
-  },
-  {
-    "pic": "twolittleredhens.jpg",
-    "thumbs": "twolittleredhens.jpg",
-    "restaurants": "Two Little Red Hens",
-    "details": "Red Velvet Cake.  I could have ate this whole thing.  I don't even like cake.",
-    "Location": "New York City"
+    "city": "San Francisco"
   },
   {
     "pic": "steakandeggs.jpg",
     "thumbs": "steakandeggs.jpg",
     "restaurants": "Cafe Orlin",
     "details": "Steak and Eggs with Spinach Sauce",
-    "Location": "New York City"
+    "city": "New York City"
+  },
+  {
+    "pic": "twolittleredhens.jpg",
+    "thumbs": "twolittleredhens.jpg",
+    "restaurants": "Two Little Red Hens",
+    "details": "Red Velvet Cake.  I could have ate this whole thing.  I don't even like cake.",
+    "city": "New York City"
   },
   {
     "pic": "bellyshack_dessert.jpg",
     "thumbs": "bellyshack_dessert.jpg",
     "restaurants": "Belly Shack",
     "details": "Vietnamese Caramel Soft Serve",
-    "Location": "Chicago"
+    "city": "Chicago"
   },
   {
     "pic": "loumalnaticlose.jpg",
     "thumbs": "loumalnaticlose.jpg",
     "restaurants": "Lou Malnati's",
     "details": "The Lou",
-    "Location": "Chicago"
+    "city": "Chicago"
   },
   {
     "pic": "foragerstable.jpg",
     "thumbs": "foragerstable.jpg",
     "restaurants": "Forager's Table",
     "details": "Smoked Salmon Tartine.",
-    "Location": "New York City"
+    "city": "New York City"
   },
   {
     "pic": "bfd.jpg",
     "thumbs": "bfd.jpg",
     "restaurants": "The Gallows",
     "details": "The BFD with Poutine.  Boston",
-    "Location": "Boston"
+    "city": "Boston"
   },
   {
     "pic": "chickenandrice.jpg",
     "thumbs": "chickenandrice.jpg",
     "restaurants": "Halal Guys",
     "details": "Chicken and Rice",
-    "Location": "New York City"
+    "city": "New York City"
   },
   {
     "pic": "shavedice_wangfujin.jpg",
     "thumbs": "shavedice_wangfujin.jpg",
     "restaurants": "Wangfujing Mall",
     "details": "Red Bean Shaved Ice",
-    "Location": "Beijing, China"
+    "city": "Beijing, China"
   },
   {
     "pic": "mofongo.jpg",
     "thumbs": "mofongo.jpg",
     "restaurants": "Puerto Rico",
     "details": "Mofongo",
-    "Location": ""
+    "city": ""
   },
   {
     "pic": "bpatisserie.jpg",
     "thumbs": "bpatisserie.jpg",
     "restaurants": "b. patisserie",
     "details": "",
-    "Location": "San Francisco"
+    "city": "San Francisco"
   },
   {
     "pic": "biscuit.jpg",
     "thumbs": "biscuit.jpg",
     "restaurants": "Neal's Deli",
     "details": "Pastrami and Pimento Cheese Biscuit",
-    "Location": "Carrboro, NC"
+    "city": "Carrboro, NC"
   },
   {
     "pic": "giltbar.jpg",
     "thumbs": "giltbar.jpg",
     "restaurants": "Gilt Bar",
     "details": "Truffle Pasta",
-    "Location": "Chicago"
+    "city": "Chicago"
   },
   {
     "pic": "lifealive.jpg",
     "thumbs": "lifealive.jpg",
     "restaurants": "Life Alive",
     "details": "Adventurer Bowl",
-    "Location": "Cambridge, MA"
+    "city": "Cambridge, MA"
   },
   {
     "pic": "gtfishoyster_gnocchi.jpg",
     "thumbs": "gtfishoyster_gnocchi.jpg",
     "restaurants": "GT Fish & Oyster",
     "details": "",
-    "Location": "Chicago"
+    "city": "Chicago"
   },
   {
     "pic": "domenica.jpg",
     "thumbs": "domenica.jpg",
     "restaurants": "Domenica",
     "details": "",
-    "Location": "New Orleans"
+    "city": "New Orleans"
   },
   {
     "pic": "lobsta.jpg",
     "thumbs": "lobsta.jpg",
     "restaurants": "Pauli's",
     "details": "",
-    "Location": "Boston"
+    "city": "Boston"
   },
   {
     "pic": "shakeshack.jpg",
     "thumbs": "shakeshack.jpg",
     "restaurants": "Shake Shack",
     "details": "4th of July Special–Blueberry Pie Concrete!",
-    "Location": "New York City"
+    "city": "New York City"
   },
   {
-    "pic": "sloopdanb.jpg",
-    "thumbs": "sloopdanb.jpg",
-    "restaurants": "Toastie's",
-    "details": "Sloop Dan B",
-    "Location": "New York City"
+    "pic": "phosandwich.jpg",
+    "thumbs": "phosandwich.jpg",
+    "restaurants": "Sunny and Annie's",
+    "details": "PHO Real",
+    "city": "New York City"
   },
   {
     "pic": "bbq.jpg",
     "thumbs": "bbq.jpg",
     "restaurants": "La Barbecue",
     "details": "",
-    "Location": "Austin, TX"
+    "city": "Austin, TX"
   },
   {
     "pic": "spiffytiffy.jpg",
     "thumbs": "spiffytiffy.jpg",
     "restaurants": "Ike's Place",
     "details": "Spiffy Tiffy",
-    "Location": "SF, LA"
+    "city": "SF, LA"
   }
-]
+];
