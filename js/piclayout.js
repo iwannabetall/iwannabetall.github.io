@@ -7,7 +7,6 @@ $(document).ready(function(){
 
 	//generate pictures 
 	for(i=0; i<data.length; i++){
-			console.log("not onne")
 		var pic = $('#main').append(
 		'<article class="thumb">'+
 		'<a href="hungry/images/'+ data[i].pic + '"' +
