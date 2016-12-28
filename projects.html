@@ -33,7 +33,7 @@ p, ol, ul, h2, h3{
 h1{
 	color: black;
 	font-size: 160%;
-	font-weight:900;
+	font-weight:600;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 img{
@@ -51,12 +51,33 @@ iframe{
     display: block;
 }
 
- .carousel-inner > .item > img,
- .carousel-inner > .item > a > img {
-     display: block;
-     max-width: 100%;
-     height: 400px !important;
- }
+#myCarousel .slider-size {
+    height: 350px; //This is your slider height
+    width: 100%;
+}
+
+#election{
+  background: url('images/fulls/campaignspending.png');  
+}
+#foodmap{
+  background: url('images/fulls/nyc.png');
+}
+#byob{
+  background: url('images/fulls/byob.png');
+}
+
+#election, #foodmap, #byob{
+  background-size: contain;
+  background-repeat: no-repeat;
+    background-position: center; 
+  display: block;
+  overflow:hidden; 
+  text-indent:100%;
+  white-space: nowrap;
+  height: 350px; //This is your slider height
+  width: 100%;
+}
+
  </style>
 	<body>
    <div id="navigation-container"> </div>
@@ -71,36 +92,36 @@ iframe{
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+    <!-- Wrapper for slides.  Fix carousel height by making divs of fixed height and filling with image-->
     <div class="carousel-inner" role="listbox">
-
       <div class="item active">
-  		<a href="http://zhaoanna.me/ElectionExpenses/" target="_blank">
-			<img id="election" src="images/fulls/campaignspending.png" style="width: 100%; height:auto;">
-      	</a>          
-        <div class="carousel-caption">
-          <h3>Campaign Expenditures</h3>
-        </div>
+        <div class="slider-size">
+        <a class="carouselpic" id="election" href="http://zhaoanna.me/ElectionExpenses/" target="_blank"></a>
+      </div>
+       <div class="carousel-caption"> 
+        Campaign Expenditures
+      </div>
       </div>
 
-      <div class="item">
-      	<a href="http://imhungry.neocities.org/" target="_blank">
-			<img src="images/fulls/nyc.png">
-      	</a>        
-        <div class="carousel-caption">
-          <h3>Food Map</h3>          
-        </div>
+     <div class="item">
+        <div class="slider-size">
+        <a class="carouselpic" id="foodmap" href="http://imhungry.neocities.org/" target="_blank"></a>
+        <div class="carousel-caption"> 
+        Food Map
       </div>
-    
-      <div class="item">
-  		<a href="https://www.youtube.com/watch?v=7V4LHC1yMpk" target="_blank" data-toggle="modal">
-        <img id="byob" src="images/fulls/byob.png" style="padding-top:88px; padding-bottom:88px;">      	
-      </a>   
-        <div class="carousel-caption">
-          <h3>Bring Your Own Bag</h3>
-        </div>
-      </div> 
+      </div>
+      </div>    
   
+    <div class="item">
+        <div class="slider-size">
+        <a class="carouselpic" id="byob" href="https://www.youtube.com/watch?v=7V4LHC1yMpk" target="_blank"></a>
+        <div class="carousel-caption"> 
+        Bring Your Own Bag
+      </div>
+      </div>
+      </div>
+
+
     </div>
 
     <!-- Left and right controls -->
@@ -160,12 +181,6 @@ $(document).ready(function(){
   var screen_width = $(window).width();
   var aspectratio = 560/315;
   
-    if(screen_width <= 375){
-      $("#byob").removeAttr("style")
-      $('h1').attr("font-size", "70%")
-      $('h3').attr("font-size", "70%")
-
-    }
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
     var url = $("#byob").attr('src');
@@ -183,15 +198,19 @@ $(document).ready(function(){
     });
   
     if (screen_width <= 560){
-      $("iframe").css("width", screen_width)
-      $("iframe").css("width", screen_width/aspectratio)
+      console.log("wtf")
+      var a = $("#myCarousel .slider-size")
+      for (i=0; i < a.length; i++){
+        a.attr("height", "300px");
+      }
+      $(".carouselpic").attr("height", "300px")
+      //$("iframe").css("width", screen_width)
+      //$("iframe").css("width", screen_width/aspectratio)
       //document.getElementsByTagName("iframe").css("width", screen_width)
       //$(".html5-video-container video").attr('width', screen_width+'px')
       //$(".html5-video-container video").attr('height', screen_width/aspectratio + 'px')
       //$("#byob").attr('width', screen_width)
       //$("#byob").attr('width', screen_width/aspectratio)
-      console.log("make smaller")
-      console.log(screen_width)
     }
 
 });
