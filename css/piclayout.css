@@ -1277,13 +1277,9 @@
 			}
 
 		}*/
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {		
 
-			.poptrox-popup:before {
-				display: none;
-			}			
-
-			.poptrox-popup .closer,
+			.poptrox-popup .closer
 			{
 				display: none !important;
 			}
