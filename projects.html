@@ -56,7 +56,7 @@ iframe{
 <h1>Selected Projects</h1>
 <div class="container">
   <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-interval="false">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -68,8 +68,8 @@ iframe{
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-  		<a href="#" target="_blank">
-			<img src="images/fulls/campaignspending.png" onclick="openD3()">
+  		<a href="http://zhaoanna.me/ElectionExpenses/" target="_blank">
+			<img id="election" src="images/fulls/campaignspending.png">
       	</a>          
         <div class="carousel-caption">
           <h3>Campaign Expenditures</h3>
@@ -86,9 +86,9 @@ iframe{
       </div>
     
       <div class="item">
-  		<a href="#myModal" data-toggle="modal">
-			<img src="images/fulls/byob.png" style ="padding-top:88px; padding-bottom:88px;">
-      	</a>   
+  		<a href="#myModal" data-toggle="modal" >
+        <img src="images/fulls/byob.png" style ="padding-top:88px; padding-bottom:88px;">      	
+      </a>   
         <div class="carousel-caption">
           <h3>Bring Your Own Bag</h3>
         </div>
@@ -112,7 +112,7 @@ iframe{
     <div class="row">
       <div class="col-md-4" >
         <h1>Campaign Expenditures</h1>
-        <a href="#" target="_blank"><img src="images/thumbs/campaignspending.png" onclick="openD3()"></a>      
+        <a href="http://zhaoanna.me/ElectionExpenses/" target="_blank" data-role="button"><img src="images/thumbs/campaignspending.png"></a>      
         <p>Group project using D3 to visualize campaign spending in the 2016 election cycle. </p>
       </div>
       <div class="col-md-4">
@@ -123,7 +123,7 @@ iframe{
       <div class="col-md-4">
         
         <h1>BYOB</h1>
-        <a href = "#myModal" data-toggle="modal"><iframe width="320" height="240" src="https://www.youtube.com/embed/7V4LHC1yMpk?autoplay=1" frameborder="0" allowFullScreen=""></iframe>
+        <a href = "#myModal" data-toggle="modal"><iframe width="320" height="240" src="https://www.youtube.com/embed/7V4LHC1yMpk?autoplay=0" frameborder="0" allowFullScreen=""></iframe>
         <p>Years ago, as part of <a href="https://sustain.princeton.edu/greenleaders/student-environmental-communication-network-secn">Princeton's SECN</a> summer program,<a href="http://mimionuoha.com"> Mimi Onuoha</a> and I made this 10 minute documentary about plastic bags in two weeks. <br>Bring Your Own Bag, please!</p>
 
 
@@ -149,6 +149,7 @@ function openD3(){
 }
 
 $(document).ready(function(){
+
   var screen_height = $(window).height();
   var screen_width = $(window).width();
   var aspectratio = 560/315;
@@ -179,7 +180,6 @@ $(document).ready(function(){
       //$("#byob").attr('width', screen_width/aspectratio)
       console.log("make smaller")
       console.log(screen_width)
-
     }
 
 });

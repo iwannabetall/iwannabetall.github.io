@@ -44,7 +44,7 @@ h1{
   font-size: 16px;
 }
 .blogphoto{
-  margin: 20px;
+  padding:1em;
 }
 
 </style>
@@ -57,13 +57,13 @@ h1{
 
         <p> Thanks for creeping on this thing I Googled and copy pasted together.  </p>
 
-        <p>Here is a nice and centered picture of me in case you were worried you mixed up your Asians.  <br>(It took me way too long to figure out how to center this picture, and then I stumbled upon <a href="https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/" target="_blank">this</a>). </p>        
+        <p>Here is a nice and centered* picture of me in case you were worried you mixed up your Asians. </p>        
 
-
-      <img class="blogphoto" src="images/thumbs/me.jpg" style="position:absolute; left:50%; margin-left:-160px;" />
-
-
-
+    <div class="item">
+      <img class="blogphoto" src="images/thumbs/me.jpg" style="position:relative; left:50%; margin-left:-160px;" />
+        <figcaption style="display:block;">(*It took me way too long to figure out how to center this picture, until I finally stumbled upon <a href="https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/" target="_blank">this</a>).</figcaption>
+    </div>
+      
    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
