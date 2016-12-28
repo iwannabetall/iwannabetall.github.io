@@ -56,12 +56,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: #27A967;
 	color: white;
 	text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 .jumbotron p {
 	color: white;
 	font-size: 26px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .blogphoto{

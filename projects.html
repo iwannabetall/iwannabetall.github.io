@@ -50,13 +50,20 @@ iframe{
     margin: 0 auto;
     display: block;
 }
-</style>
+
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     display: block;
+     max-width: 100%;
+     height: 400px !important;
+ }
+ </style>
 	<body>
    <div id="navigation-container"> </div>
 <h1>Selected Projects</h1>
 <div class="container">
   <br>
-  <div id="myCarousel" class="carousel slide" data-interval="false">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -69,7 +76,7 @@ iframe{
 
       <div class="item active">
   		<a href="http://zhaoanna.me/ElectionExpenses/" target="_blank">
-			<img id="election" src="images/fulls/campaignspending.png">
+			<img id="election" src="images/fulls/campaignspending.png" style="width: 100%; height:auto;">
       	</a>          
         <div class="carousel-caption">
           <h3>Campaign Expenditures</h3>
@@ -86,8 +93,8 @@ iframe{
       </div>
     
       <div class="item">
-  		<a href="#myModal" data-toggle="modal" >
-        <img src="images/fulls/byob.png" style ="padding-top:88px; padding-bottom:88px;">      	
+  		<a href="https://www.youtube.com/watch?v=7V4LHC1yMpk" target="_blank" data-toggle="modal">
+        <img id="byob" src="images/fulls/byob.png" style="padding-top:88px; padding-bottom:88px;">      	
       </a>   
         <div class="carousel-caption">
           <h3>Bring Your Own Bag</h3>
@@ -122,10 +129,9 @@ iframe{
       </div>
       <div class="col-md-4">
         
-        <h1>BYOB</h1>
-        <a href = "#myModal" data-toggle="modal"><iframe width="320" height="240" src="https://www.youtube.com/embed/7V4LHC1yMpk?autoplay=0" frameborder="0" allowFullScreen=""></iframe>
-        <p>Years ago, as part of <a href="https://sustain.princeton.edu/greenleaders/student-environmental-communication-network-secn">Princeton's SECN</a> summer program,<a href="http://mimionuoha.com"> Mimi Onuoha</a> and I made this 10 minute documentary about plastic bags in two weeks. <br>Bring Your Own Bag, please!</p>
-
+      <h1>BYOB</h1>
+      <a href = "#myModal" data-toggle="modal" id="byobvid"><iframe width="320" height="240" src="https://www.youtube.com/embed/7V4LHC1yMpk?autoplay=0" frameborder="0" allowFullScreen=""></iframe>
+      <p>Years ago, as part of <a href="https://sustain.princeton.edu/greenleaders/student-environmental-communication-network-secn">Princeton's SECN</a> summer program,<a href="http://mimionuoha.com"> Mimi Onuoha</a> and I made this 10 minute documentary about plastic bags in two weeks. <br>Bring Your Own Bag, please!</p>
 
       </div>
     </div>
@@ -154,6 +160,12 @@ $(document).ready(function(){
   var screen_width = $(window).width();
   var aspectratio = 560/315;
   
+    if(screen_width <= 375){
+      $("#byob").removeAttr("style")
+      $('h1').attr("font-size", "70%")
+      $('h3').attr("font-size", "70%")
+
+    }
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
     var url = $("#byob").attr('src');
