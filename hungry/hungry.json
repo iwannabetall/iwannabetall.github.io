@@ -10,7 +10,7 @@ var data = [
     "pic": "bellyshack.jpg",
     "thumbs": "bellyshack.jpg",
     "restaurants": "Belly Shack",
-    "details": "I once spent $27 here by myself for lunch...everything here is about $10.",
+    "details": "",
     "city": "Chicago"
   },
   {
@@ -24,7 +24,7 @@ var data = [
     "pic": "banhmi.jpg",
     "thumbs": "banhmi.jpg",
     "restaurants": "Banh Mi Saigon",
-    "details": "Used to be only $5!  Now $5.50 T_T.",
+    "details": "",
     "city": "Chinatown, NYC"
   },
   {
@@ -122,7 +122,7 @@ var data = [
     "pic": "twolittleredhens.jpg",
     "thumbs": "twolittleredhens.jpg",
     "restaurants": "Two Little Red Hens",
-    "details": "Red Velvet Cake.  I could have ate this whole thing.  I don't even like cake.",
+    "details": "Red Velvet Cake.  I could have ate it all.  I don't even like cake.",
     "city": "New York City"
   },
   {
