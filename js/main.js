@@ -21,7 +21,7 @@ $(document).ready(function(){
         '<li>'+
           '<a href="diy.html">DIY</a>'+
         '<li><a href="hungry.html">'+"I'm Hungry.</a></li>"+
-        '<li><a href="photos.html">Photos</a></li>'+
+        '<li><a href="notselfies.html">Photos</a></li>'+
         '<li><a href="stupidq.html">Stupid Question(s)</a></li>'+
         '<li><a href="hat.html">'+"I'm a grown-up.</a></li></ul></div></div></nav>"
 	);

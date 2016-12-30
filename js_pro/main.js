@@ -20,7 +20,7 @@ $(document).ready(function(){
         '<li>'+
           '<a href="projects.html">PROJECTS</a>'+
         '<li><a href="thoughts.html">THOUGHTS</a></li>' + 
-		'<li><a href="photos.html">PHOTOS</a></li>'
+		'<li><a href="notselfies.html">PHOTOS</a></li>'
 	);
 
 	//mobile menu
