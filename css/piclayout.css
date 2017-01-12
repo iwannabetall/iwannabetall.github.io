@@ -48,6 +48,13 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.navbar {
+		margin-bottom: 0;
+	    position: fixed;
+	    width: 100%;
+	    top: 0;
+	    display: block;
+	}
 /* Box Model */
 
 	*, *:before, *:after {
