@@ -49,12 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 0.5em 0;
 }   
 
-.navbar {
-	margin-bottom: 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
+
 .jumbotron {
 	background: #27A967;
 	color: white;
@@ -70,8 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .theprocess{
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .topobackground {
