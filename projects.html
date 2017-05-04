@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Projects</title>
@@ -66,7 +61,11 @@ iframe{
   background: url('images/fulls/byob.png');
 }
 
-#election, #foodmap, #byob{
+#scotus{
+  background: url('images/fulls/scotusviz.png'); 
+}
+
+#election, #foodmap, #byob, #scotus{
   background-size: contain;
   background-repeat: no-repeat;
     background-position: center; 
@@ -76,6 +75,16 @@ iframe{
   white-space: nowrap;
   height: 350px; //This is your slider height
   width: 100%;
+}
+
+.carousel-caption{
+  /*color: black;*/
+  /*background-color: black;*/
+  font-size: 1.5em;
+  /*opacity: 0.5;*/
+  /*text-shadow: 0px 0px 5px #000;*/
+  text-shadow: 0px 0px 5px #000, -1px -1px #000, 1px 1px #000;
+
 }
 
  </style>
@@ -90,36 +99,46 @@ iframe{
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides.  Fix carousel height by making divs of fixed height and filling with image-->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="slider-size">
-        <a class="carouselpic" id="election" href="http://zhaoanna.me/ElectionExpenses/" target="_blank"></a>
+        <a class="carouselpic" id="scotus" href="http://zhaoanna.me/SCOTUS/" target="_blank"></a>
       </div>
-       <div class="carousel-caption"> 
-        Campaign Expenditures
-      </div>
+        <div class="carousel-caption"> 
+        Supreme Court Voting Trends
+        </div>
       </div>
 
      <div class="item">
         <div class="slider-size">
         <a class="carouselpic" id="foodmap" href="http://imhungry.neocities.org/" target="_blank"></a>
-        <div class="carousel-caption"> 
+         <div class="carousel-caption"> 
         Food Map
+        </div>
       </div>
+    </div> 
+
+    <div class="item">
+        <div class="slider-size">
+        <a class="carouselpic" id="election" href="http://zhaoanna.me/ElectionExpenses/" target="_blank"></a>
+         <div class="carousel-caption"> 
+        Campaign Expenditures
+        </div>
       </div>
-      </div>    
+    </div> 
   
     <div class="item">
         <div class="slider-size">
         <a class="carouselpic" id="byob" href="https://www.youtube.com/watch?v=7V4LHC1yMpk" target="_blank"></a>
         <div class="carousel-caption"> 
         Bring Your Own Bag
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
 
 
     </div>
@@ -138,22 +157,31 @@ iframe{
   <section class="call-to-action">
   <div class="container">
     <div class="row">
-      <div class="col-md-4" >
+       <div class="col-md-6">
+        <h1>Supreme Court Voting Trends</h1>
+        <a href="http://zhaoanna.me/SCOTUS/" target="_blank"><img src="images/thumbs/scotusviz.png" ></a>        
+        <p>A D3 visualization of how often justices vote with each other.  Part of my Master's thesis using data from the <a href="http://scdb.wustl.edu/data.php" target="_blank">Supreme Court Database</a>. </p>
+      </div>
+
+      <div class="col-md-6" >
         <h1>Campaign Expenditures</h1>
         <a href="http://zhaoanna.me/ElectionExpenses/" target="_blank" data-role="button"><img src="images/thumbs/campaignspending.png"></a>      
         <p>Group project using D3 to visualize campaign spending in the 2016 election cycle. </p>
       </div>
-      <div class="col-md-4">
+     </div>
+     
+     <div class='row'>
+
+      <div class="col-md-6">
         <h1>Food Mapping</h1>
         <a href="http://imhungry.neocities.org/" target="_blank"><img src="images/thumbs/nyc.png" ></a>        
         <p>Used the Google Maps API and Javascript to make a data viz mapping the locations of places I had eaten at. Yes, I'm a bit of a food snob.</p>
       </div>
-      <div class="col-md-4">
-        
-      <h1>BYOB</h1>
-      <a href = "#myModal" data-toggle="modal" id="byobvid"><iframe width="320" height="240" src="https://www.youtube.com/embed/7V4LHC1yMpk?autoplay=0" frameborder="0" allowFullScreen=""></iframe>
-      <p>Years ago, as part of <a href="https://sustain.princeton.edu/greenleaders/student-environmental-communication-network-secn">Princeton's SECN</a> summer program,<a href="http://mimionuoha.com"> Mimi Onuoha</a> and I made this 10 minute documentary about plastic bags in two weeks. <br>Bring Your Own Bag, please!</p>
 
+      <div class="col-md-6">        
+        <h1>BYOB</h1>
+        <a href = "#myModal" data-toggle="modal" id="byobvid"><iframe width="320" height="240" src="https://www.youtube.com/embed/7V4LHC1yMpk?autoplay=0" frameborder="0" allowFullScreen=""></iframe>
+        <p>Years ago, as part of <a href="https://sustain.princeton.edu/greenleaders/student-environmental-communication-network-secn">Princeton's SECN</a> summer program,<a href="http://mimionuoha.com"> Mimi Onuoha</a> and I made this 10 minute documentary about plastic bags in two weeks. <br>Bring Your Own Bag, please!</p>
       </div>
     </div>
   </div>
