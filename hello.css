@@ -32,14 +32,24 @@ a {
 strong, b {
     color: black;
     font-weight: 600;
+		font-size: 1.4em;
 }
 
 em, i {
     font-style: italic;
 }
 
+
+.sect{
+	font-weight:600;
+	text-decoration: underline;
+	margin: 0 0 0.7em 0;
+	font-size: 1.6em;
+}
+
 p {
     margin: 0 0 0.7em 0;
+		font-size: 1.2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -197,4 +207,12 @@ footer .copyright {
 .call-to-action p {
 	margin-bottom: 30px;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+ol>li{
+	margin-bottom: 10px;
+}
+
+.recipe{
+	font-size: 1.4em
 }
